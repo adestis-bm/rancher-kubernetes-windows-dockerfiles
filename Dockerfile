@@ -1,6 +1,6 @@
 ARG  SERVERCORE_VERSION
 
-FROM golang:1.16-nanoserver-1809 AS build-env
+FROM rancher/golang:1.16-windowsservercore AS build-env
 
 WORKDIR /project
 ADD . /project
